@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <!--[if lt IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+            href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <title>注册与登录</title>
+
+    <link rel="shortcut icon" href="img/lab.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/icheck/blue.css" rel="stylesheet"><!--icheck样式-->
+    <link rel="stylesheet" href="css/sign.css">
+
+</head>
+
+<body class="sign-page">
+<div class="center-wrapper-inverse">
+    <div class="container center-content">
+        <div class="col-sm-3 col-md-4"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div id="signin">
+                <form id="form-signin" role="form" method="POST">
+                    <div class="form-group sign-group">
+                        <input type="email" class="form-control sign-control" name="email"
+                               id="input-email" placeholder="邮箱">
+                    </div>
+                    <div class="form-group sign-group">
+                        <input type="password" class="form-control sign-control" name="hash_password"
+                               id="input-password" placeholder="密码">
+                    </div>
+                    <div class="form-group sign-group">
+                        <div class="gh-inline text-right">
+                            <small><a href="./forget_pwd">忘记密码?</a></small>
+                        </div>
+                    </div>
+                    <div class="form-group sign-group sign-group-submit">
+                        <div class="gh-inline">
+                            <button id="submit-signin" type="submit"
+                                    class="btn btn-primary btn-lg btn-blue btn-block disabled">登录
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group sign-group">
+                        <div class="gh-inline text-left">
+                            <span>没有账号?</span><a id="link-signup">立即注册</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="signup" class="hide">
+                <div class="sign-group-header">
+                    <a id="link-signin" class="back-signin"><i class="fa fa-arrow-left"></i>&nbsp; 返回登录</a>
+                </div>
+                <form id="form-signup" class="" role="form" method="POST">
+                    <div class="form-group sign-group">
+                        <input type="email" class="form-control sign-control" name="email"
+                               id="input-signup-email" placeholder="邮箱">
+                    </div>
+                    <div class="form-group sign-group">
+                        <input type="password" class="form-control sign-control" name="hash_password1"
+                               id="input-password1" placeholder="密码">
+                    </div>
+                    <div class="form-group sign-group">
+                        <input type="password" class="form-control sign-control" name="hash_password2"
+                               id="input-password2" placeholder="再次输入密码">
+                    </div>
+                    <div class="form-group sign-group" style="margin-bottom: 15px;">
+                        <div class="gh-inline">
+                            <div class="col-xs-6 col-md-7">
+                                <input type="captcha" class="form-control" name="captcha"
+                                       id="input-captcha" placeholder="验证码">
+                            </div>
+                            <div class="col-xs-6 col-md-5" style="padding-right: 0px; text-align: right;">
+                                <a class="btn btn-link" onclick="javascript:changeCaptcha();"
+                                   style="padding:0; margin:0;">
+                                    <img id="img-captcha" style="max-width: 100%; height: 38px;" alt="图片去火星啦"
+                                         src="/s/captcha/gen">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group sign-group">
+                        <div class="gh-inline text-left">
+								<span class="gh-checkbox"><input id="checkbox-signup" type="checkbox">
+								</span>
+                            <small>我已阅读并同意</small>
+                            <a href="./privacy" target="_blank"> 隐私政策 </a>
+                            <small>和</small>
+                            <a href="./terms" target="_blank"> 服务条款 </a>
+                        </div>
+                    </div>
+                    <div class="form-group sign-group sign-group-submit">
+                        <div class="gh-inline">
+                            <button id="submit-signup" type="submit"
+                                    class="btn btn-primary btn-lg btn-blue btn-block disabled">注册
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-4"></div>
+    </div>
+
+</div>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/sign.js"></script>
+</body>
+</html>

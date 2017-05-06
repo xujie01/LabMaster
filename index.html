@@ -1,0 +1,725 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>恋恋尘风の实验室</title>
+        <link rel="shortcut icon" href="img/lab.ico">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--针对移动浏览器的视口标签-->
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header role="banner">
+            <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="MagicGIS'" width="145"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#index-content-banner">
+                                <span class="icon fa fa-home"></span> 主页
+                            </a></li>
+                            <li><a href="#index-content-case">
+                                <span class="icon fa fa-desktop"></span> 项目
+                            </a></li>
+                            <li><a href="#index-content-project">
+                                <span class="icon fa fa-sitemap"></span> 作品
+                            </a></li>
+                            <li><a href="#index-content-share">
+                                <span class="icon fa fa-tasks"></span> Demo
+                            </a></li>
+                            <li><a href="#index-content-contract">
+                                <span class="icon fa fa-envelope"></span> 联系方式
+                            </a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Link <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://github.com/xujie01" target="_blank">Github</a></li>
+                                    <li><a href="http://blog.csdn.net/lianliancf" target="_blank">CSDN</a></li>
+                                    <li><a href="">Zhihu</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="sign.html" title="登陆"><i class="icon fa fa-user fa-lg"></i> <span>登陆</span></a></li>
+                            <li><a href="sign.html?mode=signup" title="注册"><i class="icon fa fa-user-plus fa-lg"></i> <span>注册</span></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container -->
+            </nav>
+        </header>
+
+        <main role="main">
+            <!--传送带-->
+            <div id="index-content-banner">
+                <div id="homepage-feature" class="carousel slide"  data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+                        <li data-target="#homepage-feature" data-slide-to="1"></li>
+                        <li data-target="#homepage-feature" data-slide-to="2"></li>
+                        <li data-target="#homepage-feature" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <video preload="auto" autoplay="autoplay" loop="loop" poster="img/carousel/slogan0.jpg">
+                                <source type="video/mp4" src="img/carousel/slogan0.mp4">
+                            </video>
+                            <a class="carousel-mask"></a>
+                            <div class="swiper-content carousel-caption">
+                                <h1 class="title">The Science of Where</h1>
+                                <h3 class="subtitle">GIS的应用只与一个因素有关，就是想象力</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/carousel/slogan1.jpg">
+                            <div id="slogan1" class="swiper-content carousel-caption">
+                                <h1 class="title">位置智能平台</h1>
+                                <h1 class="subtitle">专注于地理数据分析与智能化</h1>
+                                <button class="btn btn-info">加入我们</button>
+                                <a href="#department"><button class="btn btn-success">了解更多</button></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/carousel/slogan2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="img/carousel/slogan3.jpg">
+                        </div>
+                    </div><!-- /.carousel-inner -->
+
+                    <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+                        <span class="icon fa fa-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#homepage-feature" data-slide="next">
+                        <span class="icon fa fa-chevron-right"></span>
+                    </a>
+                </div><!-- /#homepage-feature.carousel -->
+            </div>
+
+            <!--简介-->
+            <div class="threebox">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="threeitemdetail">
+                            <div style="text-align: center; height:62px; width:100%;">
+                                <img src="img/newindex/online.png" style="width:68px;">
+                            </div>
+                            <div class="content1">地图</div>
+                            <div class="content2">将你的数据呈现于地图之上，不仅仅是可视化，更是探索、挖掘、发现数据的新价值之旅、用地图连接所有的信息。</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="border-left:1px solid #e2e2e2;border-right:1px solid #e2e2e2;">
+                        <div class="threeitemdetail">
+                            <div style="text-align: center; height:62px; width:100%;">
+                                <img src="img/newindex/dataservice.png" style="width:68px;">
+                            </div>
+                            <div class="content1">数据</div>
+                            <div class="content2">用户可以上传、维护或分享自己的数据，也可以使用平台提供的各类公共数据。</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="border-right:1px solid #e2e2e2;">
+                        <div class="threeitemdetail">
+                            <div style="text-align: center; height:62px; width:100%;">
+                                <img src="img/newindex/cloud.png" style="width:68px;">
+                            </div>
+                            <div class="content1">服务</div>
+                            <div class="content2">提供地址编码、路径分析、几何分析和数据可视化等针对地理数据的分析服务。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="threeitemdetail">
+                            <div style="text-align: center; height:62px; width:100%;">
+                                <img src="img/newindex/API.png" style="width:68px;">
+                            </div>
+                            <div class="content1">应用</div>
+                            <div class="content2">提供即拿即用的Web应用程序，提供数据分析与可视化，满足不同行业需求。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--项目-->
+            <div id="index-content-case">
+                <div class="solutiontext1">
+                    <span>项目 - 分享地理价值</span>
+                </div>
+                <ul class="case-content">
+                    <li class="case-item">
+                        <div class="case-img" id="property"></div><!--背景图-->
+                        <div class="mask"><!--覆盖Div-->
+                            <div class="bg other-bg"></div><!--绿色背景-->
+                            <div class="content"><!--覆盖内容-->
+                                <div class="item-img-panel"><!--覆盖图标-->
+                                    <img src="img/newindex/house@2x.png" alt="" class="item-img"><!--正常显示图标-->
+                                    <img src="img/newindex/house@2x.png" alt="" class="item-img-hover"><!--hover显示图标-->
+                                </div>
+                                <h3 class="item-title">OA管理</h3><!--覆盖标题-->
+                                <p class="item-desc">为企业布局、客群定位、环境适配、差异化房产品类和精准营销提供战略指导。</p>
+                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="case-item">
+                        <div class="case-img" id="retail"></div>
+                        <div class="mask">
+                            <div class="bg other-bg"></div>
+                            <div class="content">
+                                <div class="item-img-panel">
+                                    <img src="img/newindex/sale@2x.png" alt="" class="item-img">
+                                    <img src="img/newindex/sale@2x.png" alt="" class="item-img-hover">
+                                </div>
+                                <h3 class="item-title">空间GIS</h3>
+                                <p class="item-desc">将位置周围指标数据一一量化，通过空间计算和地理统计，为经营提供全维度指标。</p>
+                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="case-item">
+                        <div class="case-img" id="wisdom-city"></div>
+                        <div class="mask">
+                            <div class="bg other-bg"></div>
+                            <div class="content">
+                                <div class="item-img-panel">
+                                    <img src="img/newindex/smartcity@2x.png" alt="" class="item-img">
+                                    <img src="img/newindex/smartcity@2x.png" alt="" class="item-img-hover">
+                                </div>
+                                <h3 class="item-title">智慧论坛</h3>
+                                <p class="item-desc">通过数以亿计的多源大数据洞察技术，为智慧论坛提供平台依托和数据支撑。</p>
+                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+            <!--创客贴-->
+            <section id="project">
+                <div class="project-info">
+                    <h1>创客贴</h1>
+                    <h3>凝聚多位网站学长心血的创业项目</h3>
+                    <h3>开创国内在线设计新风潮</h3>
+                    <a href="index.html" target="_blank">
+                        <button class="view-more">了解更多</button>
+                    </a>
+                </div>
+            </section>
+
+            <!--作品区-->
+            <div id="index-content-project">
+                <div class="solutiontext1">
+                    <span>作品 - 无处不在，随处精彩</span>
+                </div>
+                <!--作品图标-->
+                <div class="Process col-xs-12">
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="fa fa-history"></i><br>
+                                <b>Research</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa fa-puzzle-piece"></i><br>
+                                <b>Plan</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa fa-database"></i><br>
+                                <b>Develop</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa fa-magic"></i><br>
+                                <b>Integration</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <figure class="col-sm-4">
+                        <img src="img/figure/1.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img src="img/figure/2.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img src="img/figure/3.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img src="img/figure/4.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img src="img/figure/5.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img src="img/figure/6.jpg">
+                        <figcaption>
+                            <h3>轻博客</h3>
+                            <p>入门级，目前还很丑（躺
+                                <br>
+                                <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!--Demo区-->
+            <div id="index-content-share" class="index-content">
+                <div class="solutiontext1">
+                    <span>Demo - 因为专注所以精彩</span>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="maplist">
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot1.jpg);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <ul class="maplist">
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="map">
+                                    <div class="map_wrap">
+                                        <a class="map_bg" target="_blank"
+                                           href="#"
+                                           style="background-image: url(img/figure/quot2.png);">
+                                            <div class="map_hover">
+                                                <div class="map_magnifier"><img src="img/figure/magnifier.png">
+                                                </div>
+                                                <span>点击查看</span></div>
+                                        </a>
+                                        <div class="map_info">
+                                            <div class="map_name">大型超市分布格网图</div>
+                                            <div class="map_detail">
+                                                <div class="pull-left"><span
+                                                        class="icon fa fa-user-circle fa-lg"></span><span
+                                                        class="map_icontxt">wangwl</span></div>
+                                                <div class="map_time pull-right"><span
+                                                        class="icon fa fa-clock-o fa-lg"></span><span
+                                                        class="map_icontxt">2017.04.20</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!--联系方式-->
+            <div id="index-content-contract">
+                <div id="allmap"></div>
+                <div class="connect-us">
+                    <div class="col-md-9">
+                        <div class="connect-us-box">
+                            <div class="connect-a col-md-3 col-sm-6">联系方式</div>
+                            <div class="connect-a col-md-3 col-sm-6">电话: 15127637862</div>
+                            <div class="connect-a col-md-3 col-sm-6">邮箱: 598666564@qq.com</div>
+                            <div class="connect-a col-md-3 col-sm-6">微博：weibo.com</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div><img style="margin:10px; width:80px;" class="" src="img/newindex/wechatQR.png"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <h3>项目作品</h3>
+                        <ul>
+                            <li><a href="#">管理系统</a></li>
+                            <li><a href="#">GIS系统</a></li>
+                            <li><a href="#">三维GIS平台</a></li>
+                            <li><a href="http://47.92.7.213:8080/blog/index.html" target="_blank">轻博客</a></li>
+                            <li><a href="#">论坛系统</a></li>
+                            <li><a href="#">新闻系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                        <h3>Demo</h3>
+                        <ul>
+                            <li><a href="#">跳动的字母君</a>  </li>
+                            <li><a href="#">跳动的字母</a></li>
+                            <li><a href="#">跳动的字</a></li>
+                            <li><a href="#">跳动的</a></li>
+                            <li><a href="#">跳动</a></li>
+                            <li><a href="#">跳</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                        <h3>其他</h3>
+                        <ul>
+                            <li><a href="https://github.com/xujie01" target="_blank">我的Github</a></li>
+                            <li><a href="http://blog.csdn.net/lianliancf" target="_blank">我的CSDN</a></li>
+                            <li><a href="http://zhihu.esrichina.com.cn/" target="_blank">ArcGIS知乎</a></li>
+                            <li><a href="http://mux.alimama.com/?spm=a313x.7781069.1998910419.32.tcVHTk" target="_blank">阿里妈妈MUX</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Add the extrafix for only the required viewport -->
+                    <div class="clearfix visible-sm"></div>
+                    <div class="about col-sm-12 col-md-6">
+                        <h3>关于</h3>
+                        <p>Hey，我是徐杰，程序员 & 设计师，Team Web。现就职于中国石油管道科技研究中心 · 大前端&Java团队。
+                            除了在博客与知乎专栏写点东西外，一生想做浪漫极客。
+                            我也是音乐重度依赖患者，设计师强迫症患者，书买得比看得多患者，毒舌患者，科技产品发布会观看癖患者，间歇性感伤患者，习惯性熬夜患者。
+                            以上纯属疯言疯语。</p>
+                        <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
+                    </div>
+                </div><!-- /.row -->
+
+                <ul class="social">
+                    <li><a href="" title="微博"><span class="icon fa fa-weibo"></span></a></li>
+                    <li><a href="" title="微信"><span class="icon fa fa-weixin"></span></a></li>
+                    <li><a href="https://github.com/xujie01" target="_blank" title="Github"><span class="icon fa fa-github"></span></a></li>
+                    <li>
+                        <a class="fa-stack" title="知乎" target="_blank" href="http://zhihu.esrichina.com.cn/">
+                            <i class="fa  fa-stack-1x">知</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="footer-brand"><a href="index.html"><img src="img/logo1.png" width="140" alt="Bootstrappin'"></a></p>
+            </div><!-- /.container -->
+        </footer>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oMvdENGYZmsGBZlo8MFffrQb"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
