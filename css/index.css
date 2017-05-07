@@ -1,14 +1,25 @@
 /**************************传送带样式******************************/
-/*视口高度*/
 #index-content-banner {
     width: 100%;
     height: 100vh;
     max-height: 640px;
 }
+#slogan0-img{
+    display: none;
+}
+#slogan0-video{
+    display: block;
+}
 @media (max-width: 767px){
     #index-content-banner {
         height: 300px;
         width: auto;
+    }
+    #slogan0-img{
+        display: block;
+    }
+    #slogan0-video{
+        display: none;
     }
 }
 #index-content-banner div,#index-content-banner video,#index-content-banner img{
