@@ -358,6 +358,7 @@
     text-align: center;
     margin: 0 auto;
     list-style: none;
+    padding: 0px;
 }
 #index-content-project .Process ul li {
     margin: 40px 50px 100px 50px;
