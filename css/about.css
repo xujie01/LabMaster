@@ -1,0 +1,581 @@
+html, body, div, span, img, ol, ul, li, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+ol, ul {
+    list-style: none
+}
+/*清除浮动*/
+.clearfix:before, .section:before, .nav ul:before {
+    content: "";
+    display: table
+}
+.clearfix:after, .section:after, .nav ul:after {
+    content: "";
+    display: table;
+    clear: both
+}
+a {
+    color: #2094c4;
+    text-decoration: none;
+    outline: none
+}
+a:hover {
+    color: #3498db
+}
+p {
+    padding: 0 0 20px;
+    font-size: 16px;
+}
+strong {
+    font-weight: bold
+}
+body {
+    color: #000;
+    font: normal 14px/1.4 "helvetica neue", tahoma, "hiragino sans gb", stheiti, "wenquanyi micro hei", \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+    width: 100%;
+    overflow: hidden
+}
+.left {
+    float: left
+}
+.right {
+    float: right
+}
+.fade {
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in
+}
+.fade.fade-in {
+    opacity: 1;
+    top: 0
+}
+/*初始动画样式*/
+.loading {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 10
+}
+.loading-circle {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .9;
+    border-top: 10px solid #27ae60;
+    border-right: 10px solid #d35400;
+    border-bottom: 10px solid #2980b9;
+    border-left: 10px solid #c0392b;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-moz-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-o-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+.loading-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    -webkit-transition: border-width 0.4s ease-in;
+    -moz-transition: border-width 0.4s ease-in;
+    -ms-transition: border-width 0.4s ease-in;
+    -o-transition: border-width 0.4s ease-in;
+    transition: border-width 0.4s ease-in
+}
+.loading-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px
+}
+.loading-info {
+    position: absolute;
+    top: 130%;
+    width: 160%;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in
+}
+.finish-loading .loading-info, .finish-loading .loading-circle {
+    opacity: 0
+}
+.finish-loading .loading-avatar {
+    border: 4px solid #fff
+}
+/*头部样式*/
+.section-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20
+}
+.nav {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 5
+}
+.finish-loading .nav {
+    opacity: .6
+}
+.nav li {
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 20%
+}
+.nav li a {
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    padding: 60px 0;
+    width: 100%;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -ms-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in
+}
+.nav .fade1 a:hover, .nav .fade1.hover a {
+    color: #95a5a6
+}
+.nav .fade2 a:hover, .nav .fade2.hover a {
+    color: #2980b9
+}
+.nav .fade3 a:hover, .nav .fade3.hover a {
+    color: #c0392b
+}
+.nav .fade4 a:hover, .nav .fade4.hover a {
+    color: #27ae60
+}
+.nav .back-home {
+    height: 1px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none
+}
+.nav .back-home a {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../img/about/avatar.png);
+    -webkit-background-size: 100px 100px;
+    background-size: 100px 100px;
+    padding: 0 !important;
+    top: 30px
+}
+.nav .back-home a:hover {
+    border-bottom: 4px solid #fff
+}
+.nav-bg {
+    background: #000;
+    position: relative;
+    z-index: 1;
+    height: 80px;
+    margin: 0 auto;
+    width: 0;
+    -webkit-transition: width 0.6s ease-in;
+    -moz-transition: width 0.6s ease-in;
+    -ms-transition: width 0.6s ease-in;
+    -o-transition: width 0.6s ease-in;
+    transition: width 0.6s ease-in
+}
+.shrink .nav li a {
+    padding: 20px 0;
+    font-size: 24px
+}
+.shrink .nav .back-home a {
+    top: 0
+}
+.shrink .nav-bg {
+    width: 100%
+}
+/*首页背景*/
+.home-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1
+}
+.home-bg img {
+    max-width: none
+}
+/*区块样式*/
+.section-wrap {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+.section-about .section {
+    max-width: 1090px;
+}
+.section-project .section {
+    max-width: 1090px;
+}
+.section-fristpage p {
+    text-align: center;
+    color: #fff;
+    font-size: 30px
+}
+.scroll-tip {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    top: auto !important;
+    left: 50%;
+    margin-left: -30px;
+    text-indent: -9999px;
+    background: #fff url(../img/about/bg-down-arrow.png) no-repeat 50% 30%
+}
+/*关于 页面*/
+.section-about {
+    background: #fff
+}
+.section-about .about-content .my-photo {
+    width: 335px;
+    height: 560px
+}
+@media only screen and (max-width: 1090px) {
+    .section-about .about-content .my-photo {
+        display: none;
+    }
+    .section-about .left {
+        padding-left: 10px
+    }
+}
+.about-content,.project-content .fade {
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in
+}
+.section-about .about-content .right .fade4 {
+    top: 0px;
+    left: 20px
+}
+.section-about .about-content .right .fade4.fade-in {
+    left: 0
+}
+.section-about .info-con {
+    margin: 10px 0;
+}
+.section-about .info-con .info-list {
+    display: inline-block;
+}
+.section-about .info-con .info-list span {
+    padding-right: 8px;
+    margin: 0 2px 0 4px;
+    display: inline-block;
+    line-height: 12px;
+    border-right: 2px solid #b4b4b4;
+}
+.section-about .edu_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #fff url(../img/about/edu.png)
+}
+.section-about .work_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #fff url(../img/about/work.png)
+}
+.section-about .left {
+    max-width:750px;
+}
+.conTitle,.conMTitle span {
+    display: inline-block;
+}
+.conTitle span p {
+    margin: 5px 0;
+    padding: 0;
+}
+.conMTitle span p {
+    margin: 10px 15px 0 0;
+    padding: 0;
+}
+/*项目经验*/
+.section-project {
+    background: #fff
+}
+.section-project .project_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #fff url(../img/about/project.png)
+}
+/*个人作品*/
+.section-works {
+    background: #27ae60
+}
+.works-content h2 {
+    color: #fff
+}
+.section-works .work_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #27ae60 url(../img/about/demo.png)
+}
+.works-content .works-list{
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+.works-content .works-list .fade {
+    top: 20px;
+    left: 10px;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in
+}
+.works-content .works-list .fade.fade-in {
+    left: 0;
+    top: 0
+}
+.section-works .section {
+    max-width: 990px;
+}
+.works-content .works-item {
+    position: relative;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: left;
+    overflow: hidden;
+}
+.works-content .works-item img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in
+}
+.works-content .works-item:hover img {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5)
+}
+.works-content .works-item:hover .work-info {
+    top: 0
+}
+.works-content .works-item .work-info {
+    position: absolute;
+    top: 137px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in
+}
+.works-content .works-item .work-info h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.works-content .works-item .work-info p {
+    font-size: 14px;
+}
+.more-link {
+    position: absolute;
+    bottom: 0;
+    top: auto !important;
+    left: 50%;
+    margin-left: -50px;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    width: 60px;
+    text-align: center;
+    /*margin: 0 auto;*/
+    background: #3d3d3d;
+    background: rgba(0, 0, 0, 0.6)
+}
+.more-link:hover {
+    color: #fff;
+    background: #3d3d3d;
+    background: rgba(0, 0, 0, 0.4)
+}
+/*技能水平*/
+.section-skill {
+    background: #2980b9
+}
+.section-skill h2 {
+    color: #fff
+}
+.section-skill .skill_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #2980b9 url(../img/about/skill.png)
+}
+.skill-content p {
+    color: #fff
+}
+.skill-content .fade {
+    top: 0;
+    left: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in
+}
+.skill-content .fade.fade-in {
+    left: 0
+}
+/*联系页面*/
+.section-contact {
+    background: #c0392b;
+    color: #fff
+}
+.section-contact .dcolor {
+    color: #dadada
+}
+.section-contact li {
+    color: #dadada
+}
+.section-contact a {
+    color: #fff
+}
+.section-contact .my_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background: #c0392b url(../img/about/my.png)
+}
+@media only screen and (max-width: 960px) {
+    .nav .back-home a {
+        width: 70px;
+        height: 70px;
+        margin-left: -35px;
+        -webkit-background-size: 70px 70px;
+        background-size: 70px 70px;
+    }
+    .nav li a {
+        font-size: 24px;
+    }
+    .section-fristpage p{
+        font-size: 20px
+    }
+    .section-content dd {
+        margin-left: 5px;
+    }
+    .section-content .conTitle,.conMTitle span p {
+        margin: 5px 5px 0 0;
+    }
+    .section-about .bottomPart {
+        height: 60%;
+        overflow: auto;
+    }
+}
+.section-contact .contact-content .contact-info,.contact-ways {
+    margin-top: 20px
+}
+/*根据 CSS3 判断屏幕*/
+.state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    z-index: 1
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .state-indicator {
+        z-index: 2
+    }
+}

@@ -14,7 +14,18 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="js/leaflet/leaflet.css" />
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?b616d8cf53eebcf608b2577985a27371";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <!--[if lte IE 9]>
@@ -53,15 +64,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Link <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="https://github.com/xujie01" target="_blank">
+                                    <li><a href="https://github.com/xujie01?tab=repositories" target="_blank">
                                         <span class="fa fa-github"></span>  Github</a></li>
-                                    <li><a href="http://blog.csdn.net/lianliancf" target="_blank">
-                                        <span class="fa fa-rss-square"></span>  CSDN</a></li>
-                                    <li><a href="">
-                                        <span class="fa fa-podcast"></span>  Zhihu</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="">
-                                        <span class="fa fa-arrows"></span>  Blog</a></li>
+                                    <li><a href="about.html" target="_blank">
+                                        <span class="fa fa-podcast"></span>  个人简历</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -81,8 +87,6 @@
                     <ol class="carousel-indicators">
                         <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
                         <li data-target="#homepage-feature" data-slide-to="1"></li>
-                        <li data-target="#homepage-feature" data-slide-to="2"></li>
-                        <li data-target="#homepage-feature" data-slide-to="3"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
@@ -96,22 +100,16 @@
                             <div class="swiper-content carousel-caption">
                                 <h1 class="title">The Science of Where</h1>
                                 <h3 class="subtitle">GIS的应用只与一个因素有关，就是想象力</h3>
+								<a class="btn btn-primary" href="http://47.92.7.213:8080/GIS3D/index.html" target="_blank">三维GIS平台</a>
                             </div>
                         </div>
                         <div class="item">
                             <img src="img/carousel/slogan1.jpg">
                             <div id="slogan1" class="swiper-content carousel-caption">
-                                <h1 class="title">位置智能平台</h1>
+                                <h1 class="title">GIS智能平台</h1>
                                 <h1 class="subtitle">专注于地理数据分析与智能化</h1>
-                                <button class="btn btn-info">加入我们</button>
-                                <a href="#department"><button class="btn btn-success">了解更多</button></a>
+                                <a href="project.html" target="_blank"><button class="btn btn-success">项目展示</button></a>
                             </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/carousel/slogan2.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/carousel/slogan3.jpg">
                         </div>
                     </div><!-- /.carousel-inner -->
 
@@ -133,7 +131,7 @@
                                 <img src="img/newindex/online.png" style="width:68px;">
                             </div>
                             <div class="content1">地图</div>
-                            <div class="content2">将你的数据呈现于地图之上，不仅仅是可视化，更是探索、挖掘、发现数据的新价值之旅、用地图连接所有的信息。</div>
+                            <div class="content2">将数据呈现于地图之上，不仅仅是可视化，更是探索、挖掘、发现数据的新价值之旅、用地图连接所有的信息。</div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6" style="border-left:1px solid #e2e2e2;border-right:1px solid #e2e2e2;">
@@ -142,7 +140,7 @@
                                 <img src="img/newindex/dataservice.png" style="width:68px;">
                             </div>
                             <div class="content1">数据</div>
-                            <div class="content2">用户可以上传、维护或分享自己的数据，也可以使用平台提供的各类公共数据。</div>
+                            <div class="content2">上传、维护或分享自己的数据，使用云平台提供的各类公共数据。</div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6" style="border-right:1px solid #e2e2e2;">
@@ -151,7 +149,7 @@
                                 <img src="img/newindex/cloud.png" style="width:68px;">
                             </div>
                             <div class="content1">服务</div>
-                            <div class="content2">提供地址编码、路径分析、几何分析和数据可视化等针对地理数据的分析服务。
+                            <div class="content2">地址编码、路径分析、几何分析和数据可视化等针对地理数据的分析服务。
                             </div>
                         </div>
                     </div>
@@ -161,7 +159,7 @@
                                 <img src="img/newindex/API.png" style="width:68px;">
                             </div>
                             <div class="content1">应用</div>
-                            <div class="content2">提供即拿即用的Web应用程序，提供数据分析与可视化，满足不同行业需求。
+                            <div class="content2">即拿即用的Web应用程序，提供数据分析与可视化，满足不同行业需求。
                             </div>
                         </div>
                     </div>
@@ -183,9 +181,9 @@
                                     <img src="img/newindex/house@2x.png" alt="" class="item-img"><!--正常显示图标-->
                                     <img src="img/newindex/house@2x.png" alt="" class="item-img-hover"><!--hover显示图标-->
                                 </div>
-                                <h3 class="item-title">OA管理</h3><!--覆盖标题-->
-                                <p class="item-desc">为企业布局、客群定位、环境适配、差异化房产品类和精准营销提供战略指导。</p>
-                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                                <h3 class="item-title">分布式敏捷开发系统架构</h3><!--覆盖标题-->
+                                <p class="item-desc">基于SpringMVC+Mybatis分布式敏捷开发系统架构，提供公共微服务模块，J2EE企业级开发解决方案。</p>
+                                <a class="btn btn-primary-o item-link" href="http://47.92.7.213:8080/pis-upms-server/sso/login?backurl=http%3A%2F%2F47.92.7.213:8080%2Fpis-upms-server%2Fmanage%2Findex" target="_blank">查看详情</a>
                             </div>
                         </div>
                     </li>
@@ -198,9 +196,9 @@
                                     <img src="img/newindex/sale@2x.png" alt="" class="item-img">
                                     <img src="img/newindex/sale@2x.png" alt="" class="item-img-hover">
                                 </div>
-                                <h3 class="item-title">空间GIS</h3>
-                                <p class="item-desc">将位置周围指标数据一一量化，通过空间计算和地理统计，为经营提供全维度指标。</p>
-                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                                <h3 class="item-title">GIS数字平台</h3>
+                                <p class="item-desc">基于 WebAppBuilder 修改的 noportal 数字平台，包含基本 GIS 功能、统计图、标绘编辑、导航、全景图、轨迹回放等。</p>
+                                <a class="btn btn-primary-o item-link" href="http://47.92.7.213:8080/PISGIS/index.html" target="_blank">查看详情</a>
                             </div>
                         </div>
                     </li>
@@ -213,9 +211,9 @@
                                     <img src="img/newindex/smartcity@2x.png" alt="" class="item-img">
                                     <img src="img/newindex/smartcity@2x.png" alt="" class="item-img-hover">
                                 </div>
-                                <h3 class="item-title">智慧论坛</h3>
-                                <p class="item-desc">通过数以亿计的多源大数据洞察技术，为智慧论坛提供平台依托和数据支撑。</p>
-                                <a class="btn btn-primary-o item-link" href="index.html" target="_blank">查看详情</a>
+                                <h3 class="item-title">智慧GIS论坛</h3>
+                                <p class="item-desc">Node Club 是基于 Node.js 和 MongoDB 的开源社区，MagicGIS 是基于 Node Club 的 GIS 中文技术社区。</p>
+                                <a class="btn btn-primary-o item-link" href="http://47.92.7.213:3000" target="_blank">查看详情</a>
                             </div>
                         </div>
                     </li>
@@ -223,14 +221,14 @@
                 <div class="clearfix"></div>
             </div>
 
-            <!--创客贴-->
+            <!--GIS实例-->
             <section id="project">
                 <div class="project-info">
-                    <h1>创客贴</h1>
-                    <h3>凝聚多位网站学长心血的创业项目</h3>
-                    <h3>开创国内在线设计新风潮</h3>
-                    <a href="index.html" target="_blank">
-                        <button class="view-more">了解更多</button>
+                    <h1>GIS实例</h1>
+                    <h3>ArcGIS API for JavaScript 开发示例</h3>
+                    <h3>一个简单的GIS系统</h3>
+                    <a href="http://47.92.7.213:8080/GISDemo/index.html" target="_blank">
+                        <button class="view-more">点击进入</button>
                     </a>
                 </div>
             </section>
@@ -275,7 +273,7 @@
                         <img src="img/figure/1.jpg">
                         <figcaption>
                             <h3>轻博客</h3>
-                            <p>入门级，目前还很丑（躺
+                            <p>基于Bootstrap、JSP和Servelet的博客系统
                                 <br>
                                 <a href="http://47.92.7.213:8080/blog/index.html" target="_blank"> 在线演示</a>
                             </p>
@@ -295,7 +293,7 @@
                         <img src="img/figure/3.jpg">
                         <figcaption>
                             <h3>新闻发布系统</h3>
-                            <p>要早睡啊少年
+                            <p>入门级，目前丑到惨不忍睹（躺
                                 <br>
                                 <a href="http://47.92.7.213:8080/NewsSystem/index.jsp" target="_blank"> 在线演示</a>
                             </p>
@@ -327,7 +325,7 @@
                             <h3>N博客</h3>
                             <p>基于Node.js+MongoDB+Express（一起学Node.js案例）
                                 <br>
-                                <a href="http://47.92.7.213:3000" target="_blank"> 在线演示</a>
+                                <a href="http://47.92.7.213:3001" target="_blank"> 在线演示</a>
                             </p>
                         </figcaption>
                     </figure>
@@ -346,7 +344,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -358,7 +356,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -369,7 +367,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -381,7 +379,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -392,7 +390,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -404,7 +402,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -415,7 +413,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -427,7 +425,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -438,7 +436,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -450,7 +448,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -461,7 +459,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot1.jpg);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -473,7 +471,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -489,7 +487,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -501,7 +499,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -512,7 +510,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -524,7 +522,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -535,7 +533,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -547,7 +545,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -558,7 +556,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -570,7 +568,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -581,7 +579,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -593,7 +591,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -604,7 +602,7 @@
                                 <li class="map">
                                     <div class="map_wrap">
                                         <a class="map_bg" target="_blank"
-                                           href="#"
+                                           href="#"  data-toggle="modal" data-target="#myModal"
                                            style="background-image: url(img/figure/quot2.png);">
                                             <div class="map_hover">
                                                 <div class="map_magnifier"><img src="img/figure/magnifier.png">
@@ -616,7 +614,7 @@
                                             <div class="map_detail">
                                                 <div class="pull-left"><span
                                                         class="icon fa fa-user-circle fa-lg"></span><span
-                                                        class="map_icontxt">wangwl</span></div>
+                                                        class="map_icontxt">xujie</span></div>
                                                 <div class="map_time pull-right"><span
                                                         class="icon fa fa-clock-o fa-lg"></span><span
                                                         class="map_icontxt">2017.04.20</span></div>
@@ -642,7 +640,7 @@
                             <div class="connect-a col-md-3 col-sm-6">联系方式</div>
                             <div class="connect-a col-md-3 col-sm-6">电话: 15127637862</div>
                             <div class="connect-a col-md-3 col-sm-6">邮箱: 598666564@qq.com</div>
-                            <div class="connect-a col-md-3 col-sm-6">微博：weibo.com</div>
+                            <div class="connect-a col-md-3 col-sm-6">Github：<a style="color: white" target="_blank" href="https://github.com/xujie01?tab=repositories">@xujie01</a></div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -658,32 +656,30 @@
                     <div class="col-sm-4 col-md-2">
                         <h3>项目作品</h3>
                         <ul>
-                            <li><a href="#">管理系统</a></li>
-                            <li><a href="#">GIS系统</a></li>
-                            <li><a href="#">三维GIS平台</a></li>
-                            <li><a href="http://47.92.7.213:8080/blog/index.html" target="_blank">轻博客</a></li>
-                            <li><a href="#">论坛系统</a></li>
-                            <li><a href="#">新闻系统</a></li>
+                            <li><a href="http://47.92.7.213:8080/PISGIS/index.html" target="_blank">GIS系统</a></li>
+                            <li><a href="http://47.92.7.213:8080/GIS3D/index.html" target="_blank">三维GIS平台</a></li>
+                            <li><a href="http://47.92.7.213:8080/pis-upms-server/sso/login?backurl=http%3A%2F%2F47.92.7.213:8080%2Fpis-upms-server%2Fmanage%2Findex" target="_blank">管理系统</a></li>
+                            <li><a href="http://47.92.7.213:3000" target="_blank">论坛系统</a></li>
+                            <li><a href="http://47.92.7.213:8080/GISDemo/index.html" target="_blank">GIS实例</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-2">
                         <h3>Demo</h3>
                         <ul>
-                            <li><a href="#">跳动的字母君</a>  </li>
-                            <li><a href="#">跳动的字母</a></li>
-                            <li><a href="#">跳动的字</a></li>
-                            <li><a href="#">跳动的</a></li>
-                            <li><a href="#">跳动</a></li>
-                            <li><a href="#">跳</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">跳动的字母君</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">跳动的字母</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">跳动的字</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">跳动的</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">跳动</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-2">
                         <h3>其他</h3>
                         <ul>
-                            <li><a href="https://github.com/xujie01" target="_blank">我的Github</a></li>
+                            <li><a href="https://github.com/xujie01?tab=repositories" target="_blank">我的Github</a></li>
                             <li><a href="http://blog.csdn.net/lianliancf" target="_blank">我的CSDN</a></li>
-                            <li><a href="http://zhihu.esrichina.com.cn/" target="_blank">ArcGIS知乎</a></li>
-                            <li><a href="http://mux.alimama.com/?spm=a313x.7781069.1998910419.32.tcVHTk" target="_blank">阿里妈妈MUX</a></li>
+                            <li><a href="http://www.magicgis.cn/about.html" target="_blank">在线简历</a></li>
+                            <li><a href="http://www.magicgis.cn/project.html" target="_blank">项目展示</a></li>
                         </ul>
                     </div>
 
@@ -692,18 +688,18 @@
                     <div class="about col-sm-12 col-md-6">
                         <h3>关于</h3>
                         <p>Hey，我是徐杰，程序员 & 设计师，Team Web。现就职于中国石油管道科技研究中心 · 大前端&Java团队。
-                            除了在博客与知乎专栏写点东西外，一生想做浪漫极客。
+                            除了在博客写点东西外，一生想做浪漫极客。
                             我也是音乐重度依赖患者，设计师强迫症患者，书买得比看得多患者，毒舌患者，科技产品发布会观看癖患者，间歇性感伤患者，习惯性熬夜患者。
                             以上纯属疯言疯语。
                             <br />所有素材来自互联网及开源项目，仅供技术交流。</p>
-                        <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
+                        <p><a class="btn btn-default btn-xs pull-right" href="http://www.magicgis.cn/about.html" target="_blank">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
                     </div>
                 </div><!-- /.row -->
 
                 <ul class="social">
-                    <li><a href="" title="微博"><span class="icon fa fa-weibo"></span></a></li>
-                    <li><a href="" title="微信"><span class="icon fa fa-weixin"></span></a></li>
-                    <li><a href="https://github.com/xujie01" target="_blank" title="Github"><span class="icon fa fa-github"></span></a></li>
+                    <li><a  title="微博"><span class="icon fa fa-weibo"></span></a></li>
+                    <li><a  title="微信"><span class="icon fa fa-weixin"></span></a></li>
+                    <li><a href="https://github.com/xujie01?tab=repositories" target="_blank" title="Github"><span class="icon fa fa-github"></span></a></li>
                     <li>
                         <a class="fa-stack" title="知乎" target="_blank" href="http://zhihu.esrichina.com.cn/">
                             <i class="fa  fa-stack-1x">知</i>
@@ -715,10 +711,29 @@
             </div><!-- /.container -->
         </footer>
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        小拳拳锤你胸口，(｡•ˇ‸ˇ•｡)哼！不给你看。(=ﾟωﾟ)ﾉ
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/swiper.min.js"></script>
+        <script src="js/leaflet/leaflet.js"></script>
         <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oMvdENGYZmsGBZlo8MFffrQb"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

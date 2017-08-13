@@ -71,7 +71,7 @@ $(function () {
     })
 
     /**************************百度地图API功能**********************************/
-    var map = new BMap.Map("allmap");
+    /*var map = new BMap.Map("allmap");
     map.enableScrollWheelZoom();
     // 创建地址解析器实例
     var myGeo = new BMap.Geocoder();
@@ -83,6 +83,15 @@ $(function () {
         }else{
             alert("您选择地址没有解析到结果!");
         }
-    }, "廊坊市");
+    }, "廊坊市");*/
+
+    /**************************Leaflet地图API功能**********************************/
+    var map = L.map('allmap').setView([39.520,116.711], 13);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([39.520,116.711]).addTo(map)
+        .bindPopup('中国石油管道科技研究中心.<br> 河北省廊坊市广阳区金光道51号.')
+        .openPopup();
 });
 

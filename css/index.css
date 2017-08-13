@@ -12,7 +12,7 @@
 }
 @media (max-width: 767px){
     #index-content-banner {
-        height: 300px;
+        height: 350px;
         width: auto;
     }
     #slogan0-img{
@@ -312,7 +312,7 @@
     opacity: 1;
 }
 
-/*******************创客贴***************/
+/*******************GIS实例***************/
 #project {
     height: 45rem;
     background: url(../img/newindex/project.jpg) 20% 0% fixed;
